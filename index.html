@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waifu Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Waifu Gallery</h1>
+            <div class="tag-filter">
+                <select id="tag-select">
+                    <option value="waifu">Waifu</option>
+                    <option value="maid">Maid</option>
+                    <option value="oppai">Oppai</option>
+                    <option value="selfies">Selfies</option>
+                    <option value="uniform">Uniform</option>
+                </select>
+                <button id="nsfw-toggle">SFW Only</button>
+            </div>
+        </header>
+        <div class="gallery-container">
+            <div class="waifu-card">
+                <div class="image-container">
+                    <img id="waifu-image" src="" alt="Random waifu">
+                    <div class="loader"></div>
+                </div>
+                <div class="waifu-actions">
+                    <button id="new-waifu" class="btn-primary">
+                        <i class="fas fa-random"></i> New Waifu
+                    </button>
+                    <button id="download-btn" class="btn-secondary">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                    <button id="like-btn" class="btn-like">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="waifu-info">
+                    <p id="waifu-source"></p>
+                </div>
+            </div>
+
+            <div class="favorites-section">
+                <h2>Your Favorites</h2>
+                <div id="favorites-grid" class="favorites-grid">
+                    <!-- Favorites will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
